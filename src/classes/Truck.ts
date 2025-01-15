@@ -43,10 +43,11 @@ class Truck extends Vehicle implements AbleToTow {
       this.model = model;
       this.year = year;
       this.weight = weight;
+      
       this.topSpeed = topSpeed;
       this.wheels = wheels;
       this.towingCapacity = towingCapacity;
-      
+
       if (wheels.length !== 4) {
         console.log('A truck must have exactly 4 wheels. Creating default wheels.');
         this.wheels = [
